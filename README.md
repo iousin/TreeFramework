@@ -11,6 +11,7 @@ Doesn't output anything.
 In the arm64 build it does emits the bitcode, even without any settings
 
 xcodebuild -sdk iphoneos -configuration Release -scheme TreeFramework clean build
+
 otool -arch arm64 -l  build/Release-iphoneos/TreeFramework.framework/TreeFramework | grep LLVM
 
 
